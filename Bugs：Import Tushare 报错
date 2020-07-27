@@ -1,0 +1,11 @@
+在ananconda设置的虚拟环境python3.6的版本中使用tushare，import tushare as ts提示如下：
+
+  File "tushare\__init__.py", line 43, in <module>
+    from tushare.stock.classifying import (get_industry_classified, get_concept_classified,
+
+  File "tushare\stock\classifying.py", line 17, in <module>
+    import tushare.stock.fundamental as fd
+
+AttributeError: module 'tushare' has no attribute 'stock'
+
+使用jupyter notebook 可以正常import， 求解bug,谢谢
